@@ -10,7 +10,11 @@ if [[ $LOWER_ANS == "y" ]]; then
   echo
   echo "enter file name: "
   read FILE
-  echo "your file name is $FILE"
+  if test -f "$FILE"; then
+    echo "$FILE accepted"
+  else
+    echo "your file does not exist"
+  fi
 elif [[ $LOWER_ANS == "n" ]]; then
   echo
   echo "proceding without user data"
@@ -18,10 +22,6 @@ else
   echo
   echo "enter y/n"
 fi
-
-
-
-
 
 
 #funtion to check if file exists
