@@ -16,6 +16,7 @@ if [[ $LOWER_ANS == "y" ]]; then
   echo "$FILE"
   else
     echo "your file does not exist"
+    exit
   fi
 elif [[ $LOWER_ANS == "n" ]]; then
   echo

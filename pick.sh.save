@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "Where do you prefer to go on vacation?"
+echo r ans
+
+for i in "$CHOICE"; do
+
+  case $ans in
+    beach
